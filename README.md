@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# DineSmart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**DineSmart** is a smart dining management web application designed specifically for the students and administration of Tapashi Rabeya Hall, CUET. It aims to digitize and streamline meal management, account approvals, payments, and communication within hostel dining halls. The system is designed to scale and will be expanded to support other halls across the CUET campus in the near future.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)  
+- [User Roles](#user-roles)  
+- [Technology Stack](#technology-stack)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Future Enhancements](#future-enhancements)  
+ 
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Student Signup & Approval**: Students sign up and wait for admin approval before accessing the system.  
+- **Admin Dashboard**: Visual charts for user engagement, student record management, dining manager assignment, and payment monitoring.  
+- **Dining Manager Panel**: Senior batch students assigned as dining managers can manage inventory, plan meals, track meal status, and respond to feedback.  
+- **Meal Selection & Tokens**: Students select meals via a calendar, download QR-coded meal tokens for secure scanning at dining halls.  
+- **Payment Management**: Students pay online with payment history tracking; admins monitor transactions.  
+- **Feedback System**: Two-way communication where students submit feedback and dining managers respond.  
+- **Secure Account Settings**: Students can manage their account settings, including password changes.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Roles
 
-### `npm run build`
+### 1. Student  
+- Signup and wait for approval  
+- Select meals in advance via calendar  
+- View meal tokens and scan QR codes to receive meals  
+- Make payments and view payment history  
+- Submit feedback and complaints  
+- Manage personal account settings
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Dining Manager  
+- Assigned monthly from senior student batch  
+- Monitor and manage food inventory levels with reorder alerts  
+- Plan daily and feast day meals  
+- Track meal participation status  
+- Review and respond to student feedback  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Admin  
+- Approve/reject student signups  
+- Edit or delete student records  
+- Assign dining manager monthly  
+- Monitor payment transactions  
+- View overall platform analytics and user engagement
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Technology Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Frontend**: React.js, Bootstrap  
+- **Backend**: Spring Boot (Java)  
+- **Database**: MySQL 
+- **Version Control**: Git / GitHub  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Clone the repository  
+```bash
+git clone https://github.com/DipannitaOrni/DineSmart.git
+cd dinesmart
+```
 
-## Learn More
+### 2. Frontend setup
+```bash
+cd frontend
+npm install
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Backend setup
+- Import the Spring Boot project into your preferred IDE
+- Configure your database connection
+- Run the backend server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. Students register on the signup page and wait for admin approval.
+2. Admin logs in to approve student accounts, assign dining managers, and monitor transactions.
+3. Dining managers log in via a special dashboard to manage inventory, meals, and feedback.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Refer to the project documentation and demo video for a detailed walkthrough.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Add push notifications for meal deadlines and approvals
+- Integrate AI-powered meal preference analytics
+- Mobile app version for easier access
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
