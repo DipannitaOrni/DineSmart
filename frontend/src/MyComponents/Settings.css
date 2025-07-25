@@ -1,0 +1,95 @@
+.settings-form {
+    padding: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.settings-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #003153;
+}
+
+.settings-form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 55px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: box-shadow 0.3s ease; /* Transition effect for shadow */
+}
+
+/* Optional: Add shadow on focus */
+.settings-form input:focus {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on focus */
+    border-color: #2F8C85; /* Change border color on focus */
+}
+
+.settings-form input[readOnly] {
+    color: rgba(128, 128, 128, 0.7); /* Greyish color with light opacity */
+    font-family: 'Poppins', sans-serif; /* Poppins font */
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    pointer-events: none; /* Disable pointer events */
+}
+
+.settings-form input[readOnly]:focus {
+    outline: none; /* Remove outline on focus */
+}
+.notification-preferences {
+    margin-bottom: 20px;
+}
+
+.preference-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #003153;
+    margin-bottom: 10px;
+}
+
+.preference-options {
+    display: flex; /* Use flexbox to align checkboxes and text horizontally */
+    gap: 250px;
+    white-space: nowrap; /* Stack the checkbox options vertically */
+}
+
+.preference-option {
+    display: flex;
+    align-items: center; /* Aligns checkboxes with text */
+    margin-bottom: 5px; /* Space between options */
+}
+
+.preference-option input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and text */
+    cursor: pointer; /* Pointer cursor for checkboxes */
+}
+
+.preference-option label {
+    font-size: 1em;
+    color: #444; /* Text color for reminders */
+}
+
+/* Optional: Remove any unusual background or shadow from checkboxes */
+input[type="checkbox"] {
+    appearance: none;
+    border: 1px solid #ccc; /* Custom border */
+    width: 18px; /* Size of the checkbox */
+    height: 18px; /* Size of the checkbox */
+    border-radius: 4px; /* Optional: rounded corners */
+    outline: none; /* Remove focus outline */
+    transition: background-color 0.2s, border-color 0.2s; /* Transition for hover */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #2F8C85; /* Background color when checked */
+    border-color: #2F8C85; /* Border color when checked */
+}
+
+/* Optional: Add hover effect */
+input[type="checkbox"]:hover {
+    border-color: #2F8C85; /* Border color on hover */
+}

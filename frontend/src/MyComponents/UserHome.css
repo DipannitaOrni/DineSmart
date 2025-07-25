@@ -1,0 +1,428 @@
+/* Container for the main content */
+.wrp {
+  width: 100%; /* Make the container full width */
+  margin: 0; /* Remove margin to occupy the full width */
+  margin-left: -20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+.chart-container {
+  width: 100%; /* Full-width container */
+  height: 300px; /* Fixed height for better scaling */
+  margin: 20px 0; /* Space around charts */
+}
+
+/* UserHome.css */
+
+.mealtt {
+  display: flex;
+}
+
+.event-section,
+.dining-manager-panel,
+.summary-section,
+.meal-status-section {
+  margin-left: 20px;
+  margin-top: 32px;
+  color: #2f8c85;
+  margin-bottom: 50px;
+}
+.meal-status-subtitle,
+.panel-description {
+  font-size: 0.9rem;
+  color: #555;
+
+  font-style: italic;
+  margin-top: -3px;
+}
+.summary-section .section-heading {
+  margin-bottom: 30px;
+}
+.meal-toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.meal-toggle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.meal-toggle-switch {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  margin-right: 13px;
+}
+
+.meal-toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.meal-toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.meal-toggle-switch input:checked + .slider {
+  background-color: #2f8c85;
+}
+
+.meal-toggle-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.meal-toggle-switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.meal-status-text {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-right: 15px;
+  color: #333;
+}
+
+.meal-status-text.on {
+  color: #2f8c85;
+  font-weight: bold;
+}
+
+.meal-status-text.off {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+/* Support Section */
+.support {
+  background: linear-gradient(
+    135deg,
+    #f0f0f0,
+    #e1e1e1
+  ); /* Subtle gradient for support section */
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  color: #444; /* Darker text color for readability */
+}
+
+.support h2 {
+  font-size: 1rem;
+  color: #2f8c85; /* Title color aligned with page aesthetics */
+  margin-bottom: 15px;
+  text-transform: uppercase; /* Uppercase for title emphasis */
+  letter-spacing: 1px; /* Spacing for a refined look */
+}
+
+.support p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6; /* Improved readability */
+}
+
+.support a {
+  color: #00796b; /* Slightly darker green for readability */
+  font-weight: bold; /* Bold for emphasis */
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+}
+
+.support a:hover {
+  color: #004d40; /* Darker shade on hover */
+  text-decoration: underline; /* Underline for clear link indication */
+}
+.event-item.festive {
+  background-color: #ffe4b2;
+  border-left: 5px solid #ff6b6b;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  margin-left: -40px;
+}
+
+.festive-icon {
+  margin-left: 8px;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+}
+.no-events-message {
+  text-align: center;
+  font-size: 1rem; /* Slightly larger font for visibility */
+  color: #666; /* Neutral color */
+  background-color: #f4f4f4; /* Subtle background to distinguish it */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  border: 2px dashed #ccc; /* Dashed border for emphasis */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-style: italic; /* Italic text for a friendly tone */
+}
+
+.section-heading {
+  font-size: 1.6rem; /* Smaller font size */
+  margin-bottom: 10px; /* Tightened spacing */
+  color: #2f8c85;
+}
+
+.dining-details {
+  font-size: 1rem;
+  color: #444; /* Slightly darker color */
+}
+
+.welcome-message {
+  font-size: 1.1rem; /* Adjust font size */
+  margin-bottom: 8px; /* Tightened spacing */
+  font-weight: bold;
+  color: #003153;
+}
+.duration-labe {
+  color: #003153;
+}
+.duration-info {
+  font-size: 1rem;
+  margin-bottom: 12px; /* Reduced margin */
+  font-weight: 600;
+}
+
+.encouraging-quote {
+  font-style: italic;
+  color: #555;
+  margin: 12px 0;
+  padding: 8px 16px; /* Compact padding */
+  background-color: #f7f7f7; /* Lighter background */
+  border-left: 4px solid #2f8c85; /* Slimmer border */
+  border-radius: 4px;
+  margin-top: 22px;
+}
+
+.access-button {
+  padding: 10px 20px; /* Reduced padding */
+  background-color: #2f8c85;
+  color: white;
+  font-size: 0.9rem; /* Slightly smaller font */
+  border: none;
+  border-radius: 4px; /* Smaller radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.access-button:hover {
+  background-color: #248a74;
+}
+.event-item {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between event info and date */
+  align-items: center; /* Vertically center the content */
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background-color: #ffffff; /* Neutral background */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hover effect */
+}
+
+.event-item:hover {
+  transform: scale(1.02); /* Slight enlargement on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.event-info {
+  display: flex;
+  align-items: center; /* Align title and icon vertically */
+  gap: 5px; /* Space between title and icon */
+  font-size: 1rem;
+  color: #333; /* Neutral color for text */
+}
+
+.event-date {
+  font-size: 0.9rem; /* Slightly smaller font for the date */
+  color: #666; /* Muted color for the date */
+  white-space: nowrap; /* Prevent the date from breaking into multiple lines */
+}
+
+.event-item.festive {
+  background-color: #ffe4b2; /* Highlighted background for festive events */
+  border-left: 5px solid #ff6b6b; /* Vibrant border for festive events */
+}
+.event-date {
+  font-size: 0.9rem; /* Slightly smaller font */
+  color: #666; /* Neutral color */
+  text-align: right; /* Align text to the right */
+  font-weight: bold; /* Make the date stand out */
+  font-style: italic; /* Italicize the date */
+}
+
+.festive-icon {
+  color: #ff6b6b; /* Match the festive border color */
+  font-size: 1.2rem; /* Slightly larger icon size */
+  margin-left: -300px;
+}
+
+
+.upcoming-meal-section {
+  margin-bottom: 20px;
+  margin-left: 19px;
+}
+
+.upcoming-meal-content {
+  display: flex;
+  gap: 20px;
+  
+}
+
+/* Meal Pass Card Styling */
+.meal-pass-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  max-width: 400px; /* Limit card width */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-pass-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.meal-pass-card.today {
+  border-left: 5px solid #4DBF9F; /* Green accent for today */
+}
+
+.meal-pass-card.upcoming-menu {
+  border-left: 5px solid #2f8c85; /* Teal accent for upcoming menu */
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600; /* Bold heading */
+  border-bottom: 2px solid #4DBF9F; /* Accent line under heading */
+  padding-bottom: 10px;
+}
+
+.card-icon {
+  font-size: 20px;
+  margin-bottom:6px;
+  color: #4DBF9F; /* Match the accent color */
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.meal-pass-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.meal-pass-button.lunch {
+  background-color: #4DBF9F; /* Green for lunch */
+  color: #ffffff;
+}
+
+.meal-pass-button.dinner {
+  background-color: #2f8c85; /* Teal for dinner */
+  color: #ffffff;
+}
+
+.meal-pass-button:hover {
+  opacity: 0.9;
+}
+
+.meal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left; /* Ensure parent aligns text to the left */
+}
+
+.meal-time {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500; /* Semi-bold for time */
+  text-align: left; /* Explicitly align text to the left */
+}
+
+.meal-items {
+  margin: 0;
+  font-size: 14px;
+  color: #666; /* Subtle color for menu items */
+  text-align: left; /* Explicitly align text to the left */
+}
+.skeleton {
+  background: linear-gradient(90deg, #d7f0ed 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-header {
+  width: 60%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.skeleton-card {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.loading-container {
+  padding: 20px;
+}
+.no-meals-selected {
+  font-style: italic;
+  opacity: 0.6; /* Light opacity */
+  text-align: center;
+  margin: 10px 0; /* Adjust spacing as needed */
+}

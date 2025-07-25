@@ -1,0 +1,172 @@
+
+  .feedback-form {
+    
+    width: 100%; /* Ensure the form occupies full width */
+    padding: 6px; /* Padding inside the form */
+  }
+  
+  .form-group {
+    margin-bottom: 19px; /* Space between form groups */
+  }
+  
+  /* Label styling */
+  .feedback-form label {
+    padding-left: 5px;
+    display: block; /* block display for labels */
+    font-weight: bold; /* Bold text for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #003153; /* Color matching your style */
+  }
+  
+  /* Input and textarea styles */
+  .feedback-form select, 
+  .feedback-form input[type="date"], 
+  .feedback-form textarea {
+    width: 100%; /* Ensure full width for input elements */
+    padding: 7px; /* Increased padding for comfort */
+    font-size: 15px; /* Font size */
+    border-radius: 20px;
+    color: rgba(126, 117, 117, 0.856);
+    font-family: "Poppins",sans-serif;
+    border: 1px solid #ddd; /* Light border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease; 
+  }
+
+  /* Focus styles for inputs */
+  .feedback-form select:focus,
+  .feedback-form input[type="date"]:focus,
+  .feedback-form textarea:focus {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on focus */
+
+    border-color: #2F8C85; /* Change border color on focus */
+  }
+  
+
+  /* Submit button styling */
+  .submit-btn {
+    width: 100%; /* Ensure full width for the button */
+    background-color: #2F8C85; /* Primary color for the button */
+    color: white; /* White text for contrast */
+    padding: 12px; /* Increased padding for the button */
+    border: none; /* No border */
+    border-radius: 55px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition for button */
+  }
+  
+  .submit-btn:hover {
+    background-color: #248b7e; /* Darken button on hover */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  .success-message {
+    margin-top: 15px; 
+    padding-left: 20px;/* Space above success message */
+    color: #4CAF50; /* Green color for success messages */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center align success message */
+  }
+  /* Notification Icon */
+.notification-icon {
+  
+  cursor: pointer;
+  position: relative;
+  font-size: 24px;
+  margin-left: 640px;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 8px;
+  font-size: 10px;
+}
+
+
+/* Modal Overlay */
+.fmodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better focus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+/* Modal Content */
+.fmodal-content {
+  background-color: #ffffff;
+  position: absolute;
+  padding: 25px;
+  width: 650px; /* Increased modal width */
+  border-radius: 8px;
+  max-height: 80%;
+  overflow-y: auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Softer shadow for a lighter feel */
+  font-family: "Poppins", sans-serif;
+  color: #333; /* Darker text for contrast */
+}
+
+/* Modal Title */
+.fmodal-content h2 {
+  font-size: 1.8rem;
+  color: #2f8c85; /* Major color for the title */
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  
+}
+
+/* Notification Item */
+.notification-item {
+  background-color: #d7f0ed; /* Set default row background color to #d7f0ed */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  cursor: pointer;
+  font-size: 0.9rem; /* Smaller font size for feedback */
+  overflow-wrap: break-word; /* Handle long text in feedback */
+}
+
+/* Hover Effect */
+.notification-item:hover {
+  background-color: #c1e8df; /* Slight color change on hover */
+  transform: scale(1.02); /* Slight zoom effect for interactivity */
+}
+
+/* Notification Item Text */
+.notification-item p {
+  margin: 8px 0;
+  line-height: 1.6; /* Improved line spacing for readability */
+}
+
+.notification-item strong {
+  color: #2f8c85; /* Major color for emphasis on labels */
+}
+
+.scrollable-content {
+  max-height: 300px; /* Set the maximum height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Prevent text from overlapping with scrollbar */
+  margin-top: 10px; /* Add some spacing from the heading */
+}
+/* Scrollable Area Inside Modal */
+.scrollable-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #81beb7; /* Match your theme */
+  border-radius: 10px;
+}

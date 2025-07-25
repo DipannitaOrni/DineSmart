@@ -1,0 +1,112 @@
+.dmenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 250px; /* Fixed width for sidebar */
+  height: 100vh; /* Full viewport height */
+  background-color: #d7f0ed;
+  position: fixed; /* Keeps the sidebar in place */
+  top: 0; /* Aligns to the top */
+  left: 0; /* Aligns to the left */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  z-index: 1000; /* Ensures it's above other content */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+
+  /* Border radius for the right corners */
+  border-top-right-radius: 15px; 
+
+}
+
+
+.dlogo{
+  text-align: center;
+  padding: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
+  
+  color: lightblue;
+  align-items: center;
+  display:flex;
+  gap: 15px;
+}
+.dlogo .dinesmart{
+  color: #2F8c85; 
+  font-size: 25px;
+}
+.dlogo .logo-icon{
+  color: #2F8c85;
+  font-size: 1.8rem;
+}
+.logo-icon{
+  font-size: 1.4rem;
+}
+.menu--list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  
+}
+.menu--list .ditem{
+  display: flex;
+  align-items: center;
+  gap:20px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 10px;
+  color: #2F8c85;
+}
+.menu--list .ditem:hover{
+   background-color: #2F8c85; 
+   color:white;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; 
+  
+}
+
+.subitem {
+  display: flex;
+  align-items: center;
+  gap:17px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  color: #2F8c85;
+}
+
+.subitem:hover {
+  background-color: #2F8c85; 
+   color:white;
+}
+
+.submenu-toggle {
+  cursor: pointer;
+}
+/* Custom Scrollbar Styling */
+.menu--list::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.menu--list::-webkit-scrollbar-track {
+  background: #d7f0ed; /* Track color */
+  border-radius: 10px;
+}
+
+.menu--list::-webkit-scrollbar-thumb {
+  background-color: #49a19a; /* Scrollbar color */
+  border-radius: 10px;
+  border: 2px solid #d7f0ed; /* Adds spacing around the scrollbar thumb */
+}
+
+.menu--list::-webkit-scrollbar-thumb:hover {
+  background-color: #288178; /* Darker color on hover */
+}

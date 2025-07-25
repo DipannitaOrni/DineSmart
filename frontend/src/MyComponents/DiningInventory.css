@@ -1,0 +1,136 @@
+.header-subtitle {
+  font-size: 1rem;
+  color: #6fa399;
+}
+
+
+/* Add Inventory Section */
+.add-inventory {
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top:10px;
+}
+
+.add-inventory h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #2f8c85;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #003153;
+}
+
+input[type="text"],
+input[type="number"],
+select[name="category"]{
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #cce7e4;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #2f8c85;
+  outline: none;
+}
+
+.add-btn {
+  background-color: #2f8c85;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #256e68;
+}
+
+/* Inventory Table */
+.inventory-table h2 {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  color: #2f8c85;
+  
+}
+
+/* Unique Table Styles */
+.inventory-table-container {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.inventory-table-header th {
+  background-color: #2f8c85;
+  color: #ffffff;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inventory-table-row {
+  background-color: #ffffff;
+}
+
+.inventory-table-data {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.inventory-table-row:hover {
+  background-color: #eef7f5;
+}
+
+.low-stock {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.moderate-stock {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.sufficient-stock {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-subtitle {
+    font-size: 1rem;
+  }
+}

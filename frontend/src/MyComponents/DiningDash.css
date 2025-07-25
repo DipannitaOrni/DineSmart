@@ -1,0 +1,173 @@
+/* General Styles */
+
+
+.quick-stats {
+  
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: #2f8c85;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none; /* Removed border */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.stat-card span {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top:4px;
+  color: #7f8e8f; /* Eye-catching color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for span text */
+.stat-card:hover span {
+  color: #2f8c85; /* Change text color when card is hovered */
+  transform: scale(1.1); /* Slight zoom effect for more emphasis */
+}
+
+.stat-card .icon {
+  font-size: 1.5rem;
+  margin-top:5px;
+  margin-bottom:20px;
+
+  color: #2f8c85;
+}
+
+/* Main Content */
+.dashboard-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Charts */
+.charts {
+  display: flex;
+  gap: 20px;
+}
+
+.chart-card {
+  font-size: 18px;
+  background-color: #ffffff;
+  color : #2f8c85;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+}
+.chart-card h3{
+  margin-top: 2px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #d7f0ed;
+  padding-bottom: 10px;
+
+
+}
+/* Widgets */
+/* Widget container */
+.widgets {
+  display: flex;
+  gap: 20px;
+}
+.donut h3{
+  margin-top: 2px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #d7f0ed;
+  padding-bottom: 10px;
+  font-size: 20px;
+
+}
+/* Common styles for all widget cards */
+.widget-card {
+  background-color: #ffffff;
+  color: #2f8c85;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1; /* Keeps all cards the same width */
+}
+
+/* Additional styles for feedback card */
+
+/* Header for feedback */
+.feedback-header {
+  font-size: 20px;
+  color: #2f8c85;
+  margin-top: 2px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #d7f0ed;
+  padding-bottom: 10px;
+}
+
+/* Feedback list */
+.feedback-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual feedback items */
+.feedback-list li {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for feedback items */
+.feedback-list li:hover {
+  background-color: #e6f5f3;
+  transform: scale(1.02);
+}
+
+/* Feedback name and comment */
+.feedback-name {
+  font-weight: bold;
+  color: #2f8c85;
+}
+
+.feedback-comment {
+  font-style: italic;
+  color: #555555;
+}
+
+/* Interactivity */
+.stat-card:hover,
+.chart-card:hover,
+.widget-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.chart-card canvas,
+.widget-card canvas {
+  max-height: 200px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quick-stats,
+  .charts,
+  .widgets {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,92 @@
+.payment {
+  padding: 20px;
+}
+
+.instructions-title {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  margin-top: -10px;
+  color: #003053bd;
+  text-align: center;
+  font-weight: bold;
+}
+
+.instructions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.instruction-card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f2f7f5, #e0f1ee);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.instruction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.instruction-icon {
+  font-size: 2em;
+  color: #2f8c85;
+  margin-right: 15px;
+}
+
+.instruction-card p {
+  font-size: 1em;
+  color: #444;
+  margin: 0;
+}
+
+.instruction-card strong {
+  color: #2f8c85;
+}
+
+.payment-form .form-group {
+  margin-bottom: 15px;
+}
+
+.payment-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #003153;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 55px;
+  border: 1px solid #ccc;
+  background-color: #f8f9fa; /* Light grey background for better visibility */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-form input:focus {
+  border-color: #2f8c85; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(47, 140, 133, 0.3); /* Glow effect on focus */
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #2f8c85;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #257366;
+}

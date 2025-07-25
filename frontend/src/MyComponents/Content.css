@@ -1,0 +1,156 @@
+.content{
+    width: 75%;
+    margin-left: 250px;
+    
+}
+
+/*only for content page - student dashboard*/
+
+.content-header {
+    margin-top: -19px;
+  }
+
+
+/*for other*/
+.content--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -19px;
+}
+
+.header-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.header-title{
+    color: #2f8c85;
+
+}
+
+.header-activity{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+/* Welcome Banner */
+.welcome-banner {
+    background-color: #2f8c85; /* Main color for the banner */
+    color: white; /* White text for contrast */
+    padding: 12px; /* Padding for the banner */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    margin-bottom: 7px; /* Space below the banner */
+    margin-left: 1px;
+  }
+  .welcome-banner h1{
+    color: white;
+  }
+  
+.search-box{
+    background: #dde6ed;
+    padding: 2px 10px;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 3px ;
+    align-items: center;
+}
+.search-box input{
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+    box-shadow: none; /* Removes any inner shadow */
+    -webkit-appearance: none; /* For Safari */
+    appearance: none; /* For other browsers */
+}
+.search-box .icon{
+    color: #969393;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.search-box input::placeholder {
+    font-family: 'Poppins', sans-serif; /* Replace with your desired font */
+    color: #8a8a8a; /* Set a different color */
+    font-size: 15px;
+}
+
+.icon:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+/* Card Container */
+.card--container {
+    display: flex;
+    margin-top: 25px;
+    gap: 10px; /* Space between cards */
+    justify-content: center;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.card {
+    width: 240px; /* Smaller card width */
+    padding: 8px; /* Reduced padding for compactness */
+    background-color: #dde6ed; /* Default background */
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Icon Style */
+.card--cover {
+    font-size: 1.3rem; /* Adjusted icon size for compact card */
+    color: #969393;
+    margin-bottom: 4px;
+}
+
+/* Title Style */
+.card-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #526d82;
+    margin-bottom: 4px; /* Slight space below title */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Value Style */
+.card--value {
+    font-size: 13px;
+    font-weight: bold;
+    color: #003153;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Description and Extra Info */
+.card--desc,
+.card--extra {
+    font-size: 10px;
+    line-height: 1.2;
+    color: #666;
+    margin: 2px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card--extra {
+    color: #999;
+}
