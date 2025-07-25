@@ -12,10 +12,7 @@
 - [Installation](#installation)  
 - [Usage](#usage)  
 - [Future Enhancements](#future-enhancements)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Contact](#contact)  
-
+ 
 ---
 
 ## Features
