@@ -1,0 +1,549 @@
+
+
+.adashboard {
+  padding: 3px; /* Reduced padding */
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  max-width: 1000px; /* Reduced max-width for better visibility on typical screens */
+  margin: 0 auto;
+  width: 100%;
+   overflow: hidden;
+  padding-left: 0px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin-left: 250px; /* Match the sidebar width */
+  padding-bottom: 60px;
+}
+
+.adashboard h1 {
+  margin-top: 0px;
+  margin-bottom: 4px; /* Adjust for tighter spacing */
+  font-size: 29px; /* Keeping it prominent */
+  color: #2F8C85;
+  text-align: left;
+}
+
+
+
+
+.stat-card {
+  background: linear-gradient(135deg, #d7f0ed, #e1f3ef);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #a9baca;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Add this for the glow effect on hover */
+.stat-card:hover {
+  transform: translateY(-5px); /* Slightly lift the card */
+  box-shadow: 0 0 20px rgba(58, 160, 158, 0.8); /* Teal glow effect */
+}
+
+
+.stat-card h3 {
+  font-size: 16px;
+  color: #2F8C85;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.stat-card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #003153;
+  margin: 0;
+}
+
+.stat-card .icon {
+  font-size: 24px;
+  color: #2F8C85;
+  margin-bottom: 8px;
+}
+
+
+.chart-section {
+  display: flex;
+  color: #2F8C85;
+  gap: 15px; /* Reduced gap */
+  margin-top: 15px;
+  justify-content: space-between; /* Space between charts */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: flex-start; /* Align items at the top */
+}
+.donut-chart-wrapper {
+margin-top: 17px; /* Moves the Doughnut chart down */
+display: flex;
+justify-content: center; /* Center-align the chart */
+align-items: center;
+height: 100%; /* Ensure it uses available space */
+}
+.bottom-charts {
+color: #2F8C85;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  margin-top: 50px; /* Add space from the top */
+}
+
+.bar-chart {
+  flex: 1; /* Allow the bar chart to grow */
+  max-width: 70%; /* Set a maximum width for the bar chart */
+  margin-right: 20px; /* Space between bar chart and recent activities */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+ 
+  height: 340px; /* Fixed height */
+  padding: 0; /* Remove padding to allow full height */
+  border-radius: 8px;
+  padding-left: 5px;
+  overflow: hidden; /* Prevent overflow of the contents */
+}
+.bar-chart h4{
+  padding-left: 15px;
+}
+/* Additional CSS for the canvas to ensure it resizes properly */
+.bar-chart canvas {
+  width: 100% !important; /* Ensure the canvas takes full width */
+  height: auto !important; /* Keep the height auto */
+  padding: 0 19px; /* Add horizontal padding if needed */
+}
+
+
+.recent-feedback {
+  background-color:  #f0f0f0;
+  padding: 9px;
+  padding-bottom: 0px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: "Poppins", sans-serif;
+  color: #2F8C85;
+}
+
+.recent-feedback h4 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  margin-top: 6px;
+}
+
+.recent-feedback ul {
+  list-style: none;
+  padding: 2px;
+}
+
+.feedback-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.feedback-item:hover {
+  background-color: #d7f0ed; /* Change background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increase shadow on hover */
+  transform: scale(1.05); /* Zoom in effect */
+}
+.feedback-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.feedback-student {
+  display: flex;
+  flex-direction: column;
+  width: 40%; /* Adjust width as needed */
+}
+
+.student-id {
+  font-weight: bold;
+  color: #555;
+}
+
+.student-name {
+  font-size: 13px;
+  color: #777;
+}
+
+.feedback-date {
+  width: 20%;
+  font-size: 14px;
+  color: #555;
+  margin-right: 9px;
+  text-align: center; /* Center-aligns the date/time */
+}
+.donut-chart-card {
+  flex: 1; /* Occupies proportional space */
+  max-width: 300px; /* Set a maximum width to make it square */
+  height: 303px; /* Same as max-width for a square shape */
+  background-color: #d7f0ed; /* Matches your theme */
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.donut-chart-card .chart-title {
+  font-size: 18px;
+  color: #2f8c85;
+  margin-bottom: 10px;
+  text-align: left;
+  border-bottom: 2px solid #d7f0ed;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.donut-chart-card canvas {
+  width: 100% !important;
+  height: auto !important; /* Prevent the chart from stretching out of bounds */
+}
+
+.feedback-message {
+  text-align: right;
+  width: 40%; /* Adjust width as needed */
+  font-size: 14px;
+  color: #333;
+  font-style: italic;
+}
+/* Profile section styling */
+.hall-label {
+  font-weight: bold;
+  color: #2f8c85; /* Matches theme */
+  }
+  /* Left section (Profile card) */
+  .profile-left {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  margin-right: 20px; /* Creates a gap between profile and stat cards */
+  }
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns both profile and stats properly */
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  }
+  
+.hall-image {
+width: 400px;
+height: 250px;
+border-radius: 10px;
+object-fit: cover;
+margin-left: -30px;
+border: 3px solid #2f8c85;
+}
+
+.hall-details {
+max-width: 700px;
+text-align: left;
+margin-left:45px;
+}
+
+.hall-name {
+font-size: 22px;
+color: #2f8c85;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.hall-info-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  }
+  
+  .hall-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between each info row */
+  font-size: 16px;
+  color: #555; /* Neutral text color */
+  }
+  
+
+.hall-info-item .hall-icon {
+margin-right: 10px;
+font-size: 15px;
+color: #2f8c85;
+}
+
+.hall-desc {
+font-size: 13px;
+color: #555;
+margin-top: 5px;
+line-height: 1.5;
+}
+
+/* Styling for stat cards */
+.stat-item {  
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 15px;
+background-color: #d7f0ed;
+border-radius: 10px;
+margin-top: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+}
+
+.stat-item:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Stat icon styling */
+.stat-icon {
+font-size: 24px;
+color: #2f8c85;
+margin-bottom: 10px;
+}
+
+/* Stat card text */
+.stat-item h3 {
+font-size: 20px;
+font-weight: 700;
+color: #2f8c85;
+margin: 0;
+}
+
+.stat-item p {
+font-size: 15px;
+color: #555;
+margin-top: 5px;
+}
+.email {
+
+font-weight: 500;
+color: #2f8c85; /* Brand color for email */
+margin-left: 5px;
+}
+
+.phone {
+font-weight: 500;
+color: #FF6347; /* Tomato color for phone number */
+margin-left: 5px;
+}
+.hall-subtitle {
+font-size: 13px;
+font-style: italic;
+color: #777;
+font-weight: 400;
+margin-bottom: 20px;
+margin-top:0px;
+}
+.bar-chart h4{
+margin-bottom: 18px;
+border-bottom: 2px solid #d7f0ed;
+padding-bottom: 10px;
+font-size: 20px;
+}
+.recent-feedback h4{
+margin-bottom: 13px;
+margin-top:20px;
+border-bottom: 2px solid #d7f0ed;
+padding-bottom: 8px;
+font-size: 20px;
+padding-left:10px;
+}
+.line-chart {
+  background-color: white; 
+  
+  border-radius: 8px;
+  width: 100%; /* Fill the width of the container */
+  height: 230px; /* Fixed height */
+  flex: 3; /* Line chart occupies more space */
+  padding: 0; /* Remove padding to allow full height */
+  margin-bottom: 65px;
+  padding-left: 5px;
+}
+.donut-chart {
+  background-color: white; 
+  border-radius: 8px;
+  height: 250px; /* Ensure similar height to line chart */
+  padding: 10px;
+  flex: 1; /* Smaller space compared to line chart */
+  max-width: 240px; /* Limit size for the donut chart */
+  text-align: center; /* Center-aligns the title */
+}
+
+.donut-chart h4 {
+  font-size: 14px; /* Slightly smaller font */
+  white-space: nowrap; /* Prevent line break */
+  margin-bottom: 25px; /* Space between title and chart */
+  overflow: hidden; /* Avoids text overflow */
+  text-overflow: ellipsis; /* Trims overflow text if needed */
+}
+
+.stats-overview {
+  display: flex;
+  gap: 15px; /* Slightly more gap */
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #d7f0ed, #e1f3ef);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #a9baca;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Right section (Stat cards) */
+.profile-right {
+  display: flex;
+   /* Stack the stat cards vertically */
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 35%; /* Occupies less space compared to profile */
+  gap: 15px; /* Adds space between stat cards */
+  }
+
+  .admin-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;  
+ 
+}
+.picon {
+  
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  color : #2F8C85; 
+  background-color: #ffffff;
+  margin-left: 770px;
+}
+
+
+.pmodal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better focus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+/* Modal Content */
+.pmodal {
+  background-color: #ffffff;
+  position: absolute;
+  padding: 25px;
+  width: 650px; /* Increased modal width */
+  border-radius: 8px;
+  max-height: 80%;
+  overflow-y: auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Softer shadow for a lighter feel */
+  font-family: "Poppins", sans-serif;
+  color: #333; /* Darker text for contrast */
+}
+
+/* Modal Title */
+.pmodal h2 {
+  font-size: 1.8rem;
+  color: #2f8c85; /* Major color for the title */
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  
+}
+.request-card {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 0;
+}
+
+.request-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-details strong {
+  font-size: 1rem;
+  color: #2f8c85;
+}
+
+.student-details small {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  background-color: #d7f0ed;
+  border: none;
+  color: #2f8c85;
+  width: 40px;          
+  height: 40px;       
+  border-radius: 8px;
+  font-size: 1.3rem;   
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;  
+}
+
+.action-buttons button:hover {
+  background-color: #e5f4f3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.approve-btn i {
+  color: #2f8c85;
+}
+
+.reject-btn i {
+  color: #f44336;
+}
+
+.reject-btn:hover {
+  background-color: #fdeceb;
+}
+
+  

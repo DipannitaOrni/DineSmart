@@ -1,0 +1,253 @@
+/* Ensure calendar container and dimensions */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+.meal-calendar {
+  width: 100%;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background: #f9f9f9;
+  margin-left: 16px;
+  margin-top: 3px;
+  padding: 4px; /* Optional padding */
+}
+
+/* Calendar Styling */
+.react-calendar {
+  width: 96%;
+  max-width: 98%;
+  background: rgb(215, 240, 237);
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.react-calendar * {
+  font-family: 'Poppins', sans-serif; /* Set Poppins as the font */
+  font-size: 13px; /* Change this to your desired font size */
+}
+
+/* Calendar Header Customization */
+.react-calendar__navigation {
+  background: #2F8C85; /* Header background color */
+  color: white; /* Header text color */
+  border-radius: 10px; /* Adjust as needed for rounded corners */
+  padding: 5px; /* Optional padding for spacing within the rounded border */
+}
+
+/* Navigation Button Styles */
+.react-calendar__navigation button {
+  color: white;
+  background: #2F8C85; /* Keep background consistent */
+  font-weight: bold; /* Font styling for clarity */
+  outline: none !important;
+  border: none;
+  transition: none !important; /* No animation */
+}
+/* If you want to adjust other header elements */
+.react-calendar__navigation {
+  margin-bottom: 10px; /* Optional: Adjust spacing below the header */
+}
+/* No hover or active effect */
+.react-calendar__navigation button:hover,
+.react-calendar__navigation button:focus,
+.react-calendar__navigation button:active {
+  background-color: #2F8C85 !important; /* No color change */
+  color: white !important; /* Keep text color */
+  cursor: default; /* Regular cursor */
+}
+
+/* Weekday name styles */
+.react-calendar__month-view__weekdays__weekday {
+  border-bottom: none; /* Remove any bottom border */
+  outline: none; /* Remove any outline */
+  color: #2F8C85; /* Optional: set text color to match your theme */
+  font-weight: 600; /* Optional: adjust font weight */
+}
+
+/* Remove dotted underline from abbreviated weekdays */
+.react-calendar__month-view__weekdays__weekday > abbr {
+  text-decoration: none; /* Remove dotted underline */
+}
+
+/* Ensure day numbers are bold */
+.react-calendar__month-view__days__day {
+  font-weight: bold; /* Specifically target day numbers */
+}
+
+
+.react-calendar .react-calendar__tile--now {
+  background: rgba(110, 217, 208, 0.8) !important; /* Light blue background */
+  color: black !important; /* Darker text color for contrast */
+  border-radius: 5px !important; /* Rounded corners */
+}
+/* Hover Effect for Calendar Tiles */
+.react-calendar .react-calendar__tile:hover {
+  background: rgba(161, 184, 178, 0.5) !important; /* Soft pink background on hover */
+  border-radius: 5px !important; /* Rounded corners */
+}
+.react-calendar__tile:focus,
+.react-calendar__tile--active {
+     /* Remove the outline */
+    background-color: transparent  !important; /* Keep your custom color */
+    color:  black !important; /* Ensure text color is visible */
+}
+
+
+/* Modal styling */
+/* Modal styling */
+.dmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease; /* Fade-in effect */
+}
+
+.dmodal-content {
+  background-color: #fefefe;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+  position: relative;
+  animation: scaleUp 0.3s ease; /* Scale-up effect */
+}
+.meal-error-message {
+  margin-top: 20px;
+  color: #d9534f; /* Bootstrap's danger color for errors */
+  font-weight: bold;
+  background-color: #f8d7da; /* Light red background */
+  border: 1px solid #f5c6cb; /* Border matching the theme */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Modal animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}
+
+/* Close button styling */
+/* Updated Close Button Styling */
+.dclose {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  background-color: #2f8c85; /* Light red background */
+  border-radius: 50%; /* Circular button */
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #2f8c85; /* Soft shadow */
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dclose:hover {
+  background-color: #236862;; /* Darker red on hover */
+  transform: scale(1.1); /* Slight scale-up effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+
+/* Modal heading */
+.dmodal-content h3 {
+  font-size: 20px;
+  color: #2F8C85; /* Custom color */
+  margin-bottom: 20px;
+}
+
+/* Checkbox labels styling */
+.dmodal-content label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 12px 0;
+  background-color: #f7f9fa; /* Light background for each option */
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dmodal-content label:hover {
+  background-color: #e0f4f2; /* Light hover effect */
+}
+
+.dmodal-content input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.2); /* Make checkbox slightly larger */
+}
+
+/* Save button styling */
+.dmodal-content button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #2F8C85; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+  font-family: 'Poppins',sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dmodal-content button:hover {
+  background-color: #237a73; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+/* New paragraph style below Meal Calendar heading */
+/* Fun and engaging style for the paragraph */
+.calendar-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #d7f0ed;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.calendar-info:hover {
+  background-color: #aedbda;
+  transform: scale(1.05); /* Slight increase in size */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+/* Add some emojis for fun and engaging touch */
+.calendar-info span {
+  font-size: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

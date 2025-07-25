@@ -1,0 +1,346 @@
+
+.login-card {
+    background-color: #fff;
+    padding: 40px; 
+    width: 100%;
+    max-width: 900px;
+    text-align: center; 
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #2f8c85;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 800;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; 
+    text-align: left; 
+    position: relative;
+  }
+
+  .form-group i {
+    position: absolute;
+    right: 12px; 
+    top: 63%; 
+    transform: translateY(-50%); 
+    font-size: 18px; 
+    color: #2f8c85;
+   
+  }
+  
+  label {
+    margin-bottom: 8px; 
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px; 
+    margin: 10px 0; 
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 40px;
+  }
+ 
+  input:focus {
+    outline: none;
+    border-color: #2f8c85;
+  }
+.remember-forgot{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.remember-forgot label {
+    display: flex; 
+    align-items: center; 
+    white-space: nowrap;
+}
+
+.remember-forgot label input {
+    accent-color: #2f8c85; 
+    margin-right: 15px; 
+}
+.register-link{
+    text-align: center;
+    font-size: 16px;
+}
+.register-link p{
+    font-weight: 500;
+}
+.register-link p a{
+    text-decoration: none;
+    color: #227a75;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+button[type="submit"] {
+    padding: 12px 15px;
+    font-family: 'Poppins',sans-serif;
+    width: 100%;
+    color: white;
+    background-color: #2f8c85; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #227a75; 
+}
+button[type="submit"]:active {
+    background-color: #15504c; 
+}
+
+
+.login-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .login-modal .modal-content {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 400px; 
+    width:90%;
+    position: relative;
+    
+  }
+  
+  
+.lclose-btn {
+    background: #2f8c85;
+    border: none;
+    color: white; 
+    font-size: 24px;
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer;
+    border-radius: 50%; 
+    padding: 9px 9px 6px 10px;
+ 
+
+  }
+
+  .lclose-btn:hover {
+    color: #15504c
+  }
+ 
+  .sign-up-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+   
+  }
+  
+  .sign-up-modal .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative; /* Added to create a positioning context for the close button */
+  }
+  .sign-up-modal .modal-content::-webkit-scrollbar {
+    width: 8px; /* Adjust the width of the scrollbar */
+  }
+  
+  .sign-up-modal .modal-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Custom color */
+    border-radius: 4px; /* Match the modal's corner radius */
+  }
+  
+  .sign-up-card {
+    padding: 30px; 
+    text-align: center;
+  }
+  
+  .sign-up-card .close-btn {
+    background: #2f8c85;
+    font-size: 24px;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 20px; /* Adjusted to give more space from the top */
+    right: 20px; /* Adjusted for a better position */
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 9px 9px 6px 10px;
+    z-index: 1000; /* Ensures close button is above the modal content */
+  }
+  
+  .sign-up-card .close-btn:hover {
+    color: #15504c;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 100px; /* Decreased gap for better spacing */
+    margin-top: 10px; /* Add space between heading and radio buttons */
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 16px; /* Slightly larger font size for better readability */
+    color: #333; /* Change text color for contrast */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px; /* Adds space between label and dropdown */
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  .select-container {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+}
+
+.select-container i {
+    margin-right: 1px; 
+    margin-top: 6px;
+}
+
+select {
+    padding: 8px; /* Add some padding for better appearance */
+    height: 36px; /* Set a specific height */
+    flex: 1; /* Allow the select to take the remaining space */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px;
+    cursor: pointer; /* Rounded corners */
+}
+.dob-container {
+  display: flex;              /* Use flexbox to align items */
+  align-items: center;       /* Vertically center items */
+}
+
+
+input[type="date"] {
+ 
+  padding: 8px;             
+  height: 36px;              /* Set a specific height */
+  flex: 1;                   /* Allow the input to take the remaining space */
+  border: 1px solid #ccc;    /* Border style */
+  border-radius: 4px;
+  color: #333;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 100%; /* Full width */
+  padding: 10px; /* Increased padding */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 4px; /* Rounded corners */
+  margin-top: 5px; /* Space between label and input */
+  transition: border-color 0.3s;
+ 
+}
+
+input[type="file"]{
+  color: #333; 
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.confirmation-message {
+  background-color: #e6f9f7;
+  border: 1px solid #2f8c85;
+  border-radius: 12px; /* Slightly larger border radius for a modern look */
+  color: #2f8c85;
+  text-align: center;
+  font-weight: bold;
+  padding: 40px 30px; /* More balanced padding for a square appearance */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+  position: relative;
+  max-width: 600px; /* Adjusted max width for a more square shape */
+  width: 100%; /* Optional: Make it responsive */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling on hover */
+}
+
+.confirmation-message:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover for interactivity */
+}
+
+.confirmation-message p {
+  margin: 8px 0;
+  font-size: 22px; /* Increased font size for better readability */
+}
+
+.modal-overlay.show {
+  opacity: 1;
+}
+/* Add this CSS to your styles */
+.canvas-confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensures clicks pass through to other elements */
+  z-index: 9999; /* Ensure it’s above everything else */
+}
+/* General error styles */
+.error-border {
+  border: 2px solid red;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
