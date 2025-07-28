@@ -2,6 +2,10 @@
 
 **DineSmart** is a smart dining management web application designed specifically for the students and administration of Tapashi Rabeya Hall, CUET. It aims to digitize and streamline meal management, account approvals, payments, and communication within hostel dining halls. The system is designed to scale and will be expanded to support other halls across the CUET campus in the near future.
 
+![Made with React](https://img.shields.io/badge/Made%20With-React-blue)
+![Backend: Spring Boot](https://img.shields.io/badge/Backend-Spring%20Boot-green)
+![Database](https://img.shields.io/badge/Database-MySQL-yellow)
+
 ---
 
 ## Table of Contents
