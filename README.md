@@ -91,8 +91,7 @@ npm start
 2. Admin logs in to approve student accounts, assign dining managers, and monitor transactions.
 3. Dining managers log in via a special dashboard to manage inventory, meals, and feedback.
 
-Refer to the project documentation and demo video for a detailed walkthrough.
-
+[![Demo Video](https://img.shields.io/badge/Watch-Demo-blue?logo=google-drive)](https://drive.google.com/file/d/13TImoZAhGrv8oyOnYnwaiiObzkKQeVlk/view)
 
 ---
 
